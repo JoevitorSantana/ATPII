@@ -13,8 +13,7 @@
 #include <string.h>
 #include <ctype.h>
 #include <stdlib.h>
-
-#define TF;
+ /* #define TF; */
 
 void ExibirMenu(){
 	printf("##################################### Menu ######################################## \n");
@@ -32,22 +31,24 @@ void ExibirMenu(){
 
 int main(void)
 {
-	char opcao, listaNomes[TF][TF], nome[TF];
+	char opcao;
 	int counter = 0;
 	
 	do {
+		system("cls"); // Limpa console
 		ExibirMenu();
 		
 		/** getch() Obtêm o caractere inputado **/
 		opcao = getch();
-		
+		/*opcao = toupper(getch()); */
+		/*opcao = toupper(getche()); //Exibe os Caracteres */
 		switch (toupper(opcao))
 		{
 			case 'A':
-				do {
+				 /* do {
 					printf("Insira um nome: \n");
 					gets(listaNome[counter]);
-				} while (counter <= 10 && nome != 27);
+				} while (counter <= 10 && nome != 27); */
 				break;
 			case 'B':
 				break;
