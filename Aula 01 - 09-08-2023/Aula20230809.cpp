@@ -31,7 +31,7 @@ void ExibirMenu(){
 
 int main(void)
 {
-	char opcao;
+	char opcao, listaNome[10][10];
 	int counter = 0;
 	
 	do {
@@ -45,10 +45,11 @@ int main(void)
 		switch (toupper(opcao))
 		{
 			case 'A':
-				 /* do {
+				 do {
 					printf("Insira um nome: \n");
-					gets(listaNome[counter]);
-				} while (counter <= 10 && nome != 27); */
+					nome = gets(listaNome[counter]);
+					counter++;
+				} while (counter <= 10);
 				break;
 			case 'B':
 				break;
